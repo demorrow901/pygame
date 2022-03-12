@@ -17,8 +17,10 @@ while True: # работает как в скретче
         if event.type == pygame.QUIT: # событие означает: нажата кнопка X в правом верхнем углу окна
             pygame.quit() # при этом событии окно с игрой должно закрыться
         elif event.type == pygame.KEYDOWN: #кнопка(любая на клавиатуре) нажата
-            if event.key == pygame.K_RIGHT: #кнопка "вправо"
-                player.rect.x += 5 #изменяем координаты
+            if event.key == pygame.K_DOWN: #кнопка "вправо"
+                player.rect.y += 15 #изменяем координаты
+            elif event.key == pygame.K_UP: #кнопка "вправо"
+                player.rect.y -= 15
 
     all_sprites.update() # спрайты постоянно обновляются
     all_sprites.draw(screen)
