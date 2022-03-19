@@ -1,15 +1,3 @@
-"""
-    ball(
-        screen,
-        centerx, #
-        centery, # зависят от screen
-        width,
-        height,
-        velosity_x,
-        velocity_y,
-        color,
-    )
-"""
 import pygame
 
 
@@ -20,8 +8,6 @@ class Ball():
         width=20,
         height20,
         color=(255, 255, 255),
-        centerx,
-        centery,
         velosity_x=10,
         velosity_y=10
     ):
