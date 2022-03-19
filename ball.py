@@ -19,9 +19,11 @@ class Ball():
         screen,
         width=20,
         height20,
+        color=(255, 255, 255),
+        centerx,
+        centery,
         velosity_x=10,
-        velosity_y=10,
-        color=(255, 255, 255)
+        velosity_y=10
     ):
         self.screen = screen
         self.screen_rect = screen.get_rect()
